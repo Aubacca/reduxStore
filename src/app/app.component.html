@@ -1,0 +1,26 @@
+<h1>
+  {{title}}
+</h1>
+<div>
+  <h2>Redux: Presentational Counters</h2>
+<!--
+  <div style="float: left; border: 5px solid red;">
+    <h2>Click Counter</h2>
+    <app-counter [counter$]="counter$"
+        (increment)="counterActions.increment()"
+        (decrement)="counterActions.decrement()"
+        (incrementIfOdd)="counterActions.incrementIfOdd()"
+        (incrementAsync)="counterActions.incrementAsync()">
+    </app-counter>
+  </div>
+-->
+  <div style="float: left; border: 5px solid blue;">
+    <h3>Curse Counter</h3>
+    <app-counter [numberCounterObservable]="curse"
+        (increment)="curseActions.castCurse()"
+        (decrement)="curseActions.removeCurse()"
+        (incrementIfOdd)="curseActions.castIfOdd()"
+        (incrementAsync)="curseActions.castAsync()">
+    </app-counter>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<h2>
+  counter-component works!
+</h2>
+
+<p>
+  Clicked: {{ numberCounterObservable | async }} times
+  <button (click)="increment.emit()">+</button>
+  <button (click)="decrement.emit()">-</button>
+  <button (click)="incrementIfOdd.emit()">Increment if odd</button>
+  <button (click)="incrementAsync.emit()">Increment async</button>
+</p>
